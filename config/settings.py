@@ -132,8 +132,8 @@ STATIC_URL = 'static/'
 if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / 'static']
 else:
-    STATIC_ROOT = '/var/www/django-deploy/static/'
-
+    STATIC_ROOT = BASE_DIR / 'staticfiles'
+    
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
